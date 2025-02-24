@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodge Challenger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #070707;
+            color: #fcfcfc;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            height: 70px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://img3.wallspic.com/previews/3/6/6/5/5/155663/155663-green_dodge_challenger-dodge-cars-2021_dodge_challenger_sxt-dodge_charger-x750.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8f8f8;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            background-attachment: fixed;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .car-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .car {
+            background: #fff;
+            color: #000;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .car:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .car img {
+            width: 100%;
+            height: auto;
+        }
+        .car .info {
+            padding: 1rem;
+        }
+        .car .info h2 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem;
+        }
+        .car .info p {
+            margin: 0;
+        }
+        .features {
+            background: #222;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features ul li {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Dodge Logo">
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#models">Models</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+   
+    <div class="hero">
+        <h2>THE WORLD'S MOST POWERFUL MUSCLE CAR</h2>
+    </div>
+    <div class="container" id="overview">
+        <h2>ABOUT</h2>
+        <p>The Dodge Challenger is an iconic American muscle car known for its bold design, 
+            powerful engines, and thrilling performance. With options ranging from a
+             V6 to a supercharged V8, it offers unmatched versatility for daily drives 
+             or track adventures. Combining retro-inspired styling with modern technology,
+              the Challenger delivers comfort, advanced features,
+             and a driving experience that's both exhilarating and timeless.</p>
+    </div>
+    <div class="container" id="models">
+        <h2>VEHICLES</h2>
+        <div class="car-section">
+            <div class="car">
+                <img src="https://d2ivfcfbdvj3sm.cloudfront.net/7fc965ab77efe6e0fa62e4ca1ea7673bb25e49590f1e3d8e88cb10/stills_0640_png/MY2021/14884/14884_st0640_116.png" alt="Dodge Challenger Hellcat">
+                <div class="info">
+                    <h2>Hellcat</h2>
+                    <p>Supercharged 6.2L HEMI V8, 717 HP</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://images.hgmsites.net/med/2020-dodge-challenger-srt-hellcat-rwd-angular-front-exterior-view_100812521_m.jpg" alt="Dodge Challenger Scat Pack">
+                <div class="info">
+                    <h2>Scat Pack</h2>
+                    <p>6.4L HEMI V8, 485 HP</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://assets-clean.local-car-finder.com/images/14836/14836_st1280_089.png" alt="Dodge Challenger R/T">
+                <div class="info">
+                    <h2>R/T</h2>
+                    <p>5.7L HEMI V8, 375 HP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features" id="features">
+        <h2>Why Choose the Dodge Challenger?</h2>
+        <ul>
+            <li>Exceptional horsepower and torque for thrilling performance</li>
+            <li>Iconic retro-inspired design with modern upgrades</li>
+            <li>Advanced safety and technology features</li>
+            <li>Customizable options to suit every driver</li>
+        </ul>
+    </div>
+    <div class="container" id="contact">
+        <h2>CONTACT</h2>
+        <p>For more information about the Dodge Challenger, reach out to your nearest Dodge dealer or <a href="https://www.dodge.com/" target="_blank" >visit the official Dodge website</a>.</p>
+    </div>
+</body>
+</html>
 
